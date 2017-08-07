@@ -5,12 +5,21 @@
 body {
   background: $grey;
 }
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .circle {
   background: $white;
   position: relative;
   width: $circle-diameter;
   height: $circle-diameter;
   overflow: hidden;
+  transform: rotate(-90deg);
   @include borderRadius(50%);
 
   .segment {
@@ -21,12 +30,13 @@ body {
     height: 0;
     border-top: 0 solid transparent;
     border-bottom: $segment-height solid transparent;
+    border-right: $segment-width solid pink;
     transform-origin: top left;
 
+    // using sass for loop to create 24 segment classes
     @for $i from 0 through 23 {
       &.s-#{$i} {
         @include rotate($i);
-        border-right: $segment-width solid pink;
         opacity: (100 - ($i * 4)) / 100;
       }
     }

@@ -5,6 +5,7 @@
   border-radius: $pixels;
 }
 
+// 15 degrees equates to 360 / 24 (the amount of hours in the day)
 @mixin rotate($index) {
   transform: rotate($index * 15deg);
 }
