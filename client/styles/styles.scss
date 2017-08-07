@@ -16,11 +16,29 @@ body {
   .segment {
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 50%;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 0 solid transparent;
     border-right: 100px solid $blue;
-    border-bottom: 50px solid transparent;
+    border-bottom: 27px solid transparent;
+    transform-origin: top left;
+
+    &.s-0 {
+      transform: rotate(13.09deg);
+      border-right: 100px solid pink;
+    }
+    &.s-1 {
+      transform: rotate(26.18deg);
+      border-right: 100px solid green;
+    }
+    &.s-2 {
+      transform: rotate(39.27deg);
+      border-right: 100px solid yellow;
+    }
+    &.s-3 {
+      transform: rotate(52.36deg);
+      border-right: 100px solid black;
+    }
   }
 }
