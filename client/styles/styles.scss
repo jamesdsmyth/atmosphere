@@ -1,4 +1,26 @@
+@import './reset.scss';
+@import './_vars.scss';
+@import './_mixins.scss';
 
-.atmosphere {
-  background: red;
+body {
+  background: $white;
+}
+.circle {
+  background: $red;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  @include borderRadius(50%);
+
+  .segment {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid $blue;
+    border-bottom: 50px solid transparent;
+  }
 }
