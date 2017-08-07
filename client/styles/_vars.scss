@@ -1,3 +1,10 @@
 $white: #ffffff;
-$red: red;
+$grey: #cccccc;
 $blue: blue;
+
+$pi: 3.14159;
+
+// dimensions
+$circle-diameter: 80vh;
+$segment-width: $circle-diameter / 2;
+$segment-height: ceil(($circle-diameter * $pi) / 24);
