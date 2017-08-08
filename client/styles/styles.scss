@@ -14,31 +14,36 @@ body {
 }
 
 .circle {
-  background: $white;
+  background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
   position: relative;
   width: $circle-diameter;
   height: $circle-diameter;
   overflow: hidden;
-  transform: rotate(-90deg);
   @include borderRadius(50%);
 
-  .segment {
+  .segments {
+    transform: rotate(-97.5deg);
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0 solid transparent;
-    border-bottom: $segment-height solid transparent;
-    border-right: $segment-width solid pink;
-    transform-origin: top left;
     @include transition();
-    
-    // using sass for loop to create 24 segment classes
-    @for $i from 0 through 23 {
-      &.s-#{$i} {
-        @include rotate($i);  
-        @include transitionDelay(#{$i * 100}ms);
+
+    .segment {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 0 solid transparent;
+      border-bottom: $segment-height solid transparent;
+      border-right: $segment-width solid pink;
+      transform-origin: top left;
+      
+      
+      // using sass for loop to create 24 segment classes
+      @for $i from 0 through 23 {
+        &.s-#{$i} {
+          @include rotate($i);  
+          // @include transitionDelay(#{$i * 100}ms);
+        }
       }
     }
   }
