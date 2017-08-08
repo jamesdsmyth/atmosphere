@@ -4,7 +4,7 @@ export default class Initial extends Component {
   render() {
     return (
       <div className="circle">
-        <ul className="segments">    
+        <ul className="segments">
           {
             [...Array(24)].map((x, i) => {
               const newClass = `segment s-${i}`;
