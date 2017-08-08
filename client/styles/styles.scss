@@ -32,12 +32,13 @@ body {
     border-bottom: $segment-height solid transparent;
     border-right: $segment-width solid pink;
     transform-origin: top left;
-
+    @include transition();
+    
     // using sass for loop to create 24 segment classes
     @for $i from 0 through 23 {
       &.s-#{$i} {
-        @include rotate($i);
-        opacity: (100 - ($i * 4)) / 100;
+        @include rotate($i);  
+        @include transitionDelay(#{$i * 100}ms);
       }
     }
   }
