@@ -27,7 +27,8 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    @include transition();
+    opacity: 0.7;
+    // @include transition();
 
     .segment {
       position: absolute;
