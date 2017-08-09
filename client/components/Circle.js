@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import apiCall from '../api/Api';
+
+var b = apiCall();
+
+console.log(b);
 
 const Circle = () => (
   <div className="circle">
