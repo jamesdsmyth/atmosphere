@@ -1,7 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import Store from './reducers/CombinedReducers';
 import Initial from './components/App';
 
 require('./styles/styles.scss');
 
-ReactDOM.render(<Initial /> , document.getElementById('root'));
+render(
+  <Provider store={Store}>
+    <Initial />
+  </Provider>
+  , document.getElementById('root'));
