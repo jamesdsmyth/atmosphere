@@ -1,11 +1,11 @@
 const populateWeather = (data) => {
+  console.log({
+    type: 'POPULATEWEATHER',
+    data
+  });
   return {
     type: 'POPULATEWEATHER',
-    data: {
-      a: 1,
-      b: 2,
-      c: 3
-    }
+    data
   }
 }
 

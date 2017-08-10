@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux';
-import PopulateWeather from './PopulateWeather';
+import weather from './PopulateWeather';
 
 const reducer = combineReducers({
-  weather: PopulateWeather
+  weather
 });
 
 const Store = createStore(reducer);

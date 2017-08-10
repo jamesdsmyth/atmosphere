@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Circle from './Circle';
+import apiCall from '../api/Api';
 
-export default class Initial extends Component {
-  apiCall() {
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,&mode=json&appid=fb161b8bdfd1a946ed269b0b2cf42b77').then((response) => {
-      return response.json();
-    }).then((json) => {
-      console.log(json);
-    }).catch((error) => {
-      console.log(error);
-    });
-  }
+apiCall();
 
+class Initial extends Component {
   render() {
-    this.apiCall();
+    
+    let weatherArray = this.props.weather.list != null ? this.props.weather.list : [];
+    console.log(weatherArray);
     return (
-      <Circle />
+      <Circle weatherArray={weatherArray} />
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    weather: state.weather
+  }
+}
+
+Initial = connect(mapStateToProps)(Initial);
+
+export default Initial;
