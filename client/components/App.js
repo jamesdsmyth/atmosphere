@@ -8,8 +8,10 @@ apiCall();
 class Initial extends Component {
   render() {
     
-    let weatherArray = this.props.weather.list != null ? this.props.weather.list : [];
+    let weatherArray = this.props.weather.list != null ? this.props.weather.list.splice(0,8) : [];
     console.log(weatherArray);
+
+
     return (
       <Circle weatherArray={weatherArray} />
     )
