@@ -8,7 +8,7 @@ apiCall();
 class Initial extends Component {
   render() {
     
-    let weatherArray = this.props.weather.list != null ? this.props.weather.list.splice(0,8) : [];
+    let weatherArray = this.props.weather.list != null ? this.props.weather.list.splice(0,24) : [];
     console.log(weatherArray);
 
 
