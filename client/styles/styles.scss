@@ -65,55 +65,55 @@ body {
 
       @for $i from 0 through 5 {
         .celcius-#{$i} {
-          border-right-color: #2f358f;
+          border-right-color: $blue;
         }
       }
 
       @for $i from 6 through 10 {
         .celcius-#{$i} {
-          border-right-color: #0a56a2;
+          border-right-color: $light-blue;
         }
       }
 
       @for $i from 11 through 15 {
         .celcius-#{$i} {
-          border-right-color: #1aa79d;
+          border-right-color: $light-green;
         }
       }
 
       @for $i from 16 through 20 {
         .celcius-#{$i} {
-          border-right-color: #17a456;
+          border-right-color: $green;
         }
       }
 
       @for $i from 21 through 25 {
         .celcius-#{$i} {
-          border-right-color: #fef036;
+          border-right-color: $yellow;
         }
       }
 
       @for $i from 26 through 30 {
         .celcius-#{$i} {
-          border-right-color: #fec42e;
+          border-right-color: $light-orange;
         }
       }
 
       @for $i from 31 through 35 {
         .celcius-#{$i} {
-          border-right-color: #fd9326;
+          border-right-color: $orange;
         }
       }
 
       @for $i from 36 through 40 {
         .celcius-#{$i} {
-          border-right-color: #f16631;
+          border-right-color: $dark-orange;
         }
       }
 
       @for $i from 41 through 50 {
         .celcius-#{$i} {
-          border-right-color: #eb212f;
+          border-right-color: $red;
         }
       }
     }
