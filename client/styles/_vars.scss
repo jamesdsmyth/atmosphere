@@ -7,4 +7,5 @@ $pi: 3.14159;
 // dimensions
 $circle-diameter: 80vh;
 $segment-width: $circle-diameter / 2; // half the circle
-$segment-height: ceil(($circle-diameter * $pi) / 8); // circumference is full width of circle (diameter) * PI
+// $segment-height: ceil(($circle-diameter * $pi) / 8); // circumference is full width of circle (diameter) * PI
+$segment-height: 40vh;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Segment = ( { newClass, temperature } ) => (
-  <li className={newClass}>
+  <li className={`${newClass} celcius-${temperature}`}>
     {temperature}
   </li>
 )

@@ -23,7 +23,7 @@ body {
   @include borderRadius(50%);
 
   .segments {
-    transform: rotate(-97.5deg);
+    transform: rotate(-22.5deg);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -43,6 +43,30 @@ body {
         &.s-#{$i} {
           @include rotate($i);  
         }
+      }
+    }
+
+    @for $i from 0 through 10 {
+      .celcius-#{$i} {
+        border-right-color: blue;
+      }
+    }
+
+    @for $i from 11 through 20 {
+      .celcius-#{$i} {
+        border-right-color: yellow;
+      }
+    }
+
+    @for $i from 21 through 30 {
+      .celcius-#{$i} {
+        border-right-color: orange;
+      }
+    }
+
+    @for $i from 31 through 40 {
+      .celcius-#{$i} {
+        border-right-color: red;
       }
     }
   }
