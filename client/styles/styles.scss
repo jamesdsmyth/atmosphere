@@ -39,34 +39,64 @@ body {
       transform-origin: top left;
       
       // using sass for loop to create 24 segment classes
-      @for $i from 0 through 23 {
+      @for $i from 0 through 7 {
         &.s-#{$i} {
           @include rotate($i);  
         }
       }
     }
 
-    @for $i from 0 through 10 {
+    @for $i from 0 through 5 {
       .celcius-#{$i} {
-        border-right-color: blue;
+        border-right-color: #2f358f;
       }
     }
 
-    @for $i from 11 through 20 {
+    @for $i from 6 through 10 {
       .celcius-#{$i} {
-        border-right-color: yellow;
+        border-right-color: #0a56a2;
       }
     }
 
-    @for $i from 21 through 30 {
+    @for $i from 11 through 15 {
       .celcius-#{$i} {
-        border-right-color: orange;
+        border-right-color: #1aa79d;
       }
     }
 
-    @for $i from 31 through 40 {
+    @for $i from 16 through 20 {
       .celcius-#{$i} {
-        border-right-color: red;
+        border-right-color: #17a456;
+      }
+    }
+
+    @for $i from 21 through 25 {
+      .celcius-#{$i} {
+        border-right-color: #fef036;
+      }
+    }
+
+    @for $i from 26 through 30 {
+      .celcius-#{$i} {
+        border-right-color: #fec42e;
+      }
+    }
+
+    @for $i from 31 through 35 {
+      .celcius-#{$i} {
+        border-right-color: #fd9326;
+      }
+    }
+
+    @for $i from 36 through 40 {
+      .celcius-#{$i} {
+        border-right-color: #f16631;
+      }
+    }
+
+    @for $i from 41 through 50 {
+      .celcius-#{$i} {
+        border-right-color: #eb212f;
       }
     }
   }
