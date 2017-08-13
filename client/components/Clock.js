@@ -29,7 +29,6 @@ export default class Clock extends Component {
 
     {
       this.state.loaded === false && this.time();
-      console.log('here');
     }
 
     return (

@@ -38,10 +38,11 @@ body {
     @include borderRadius(50%);
 
     .segments {
-      transform: rotate(-112.5deg);
       position: absolute;
       left: 50%;
       top: 50%;
+      transform: translate(-50%, -50%);
+      transform: rotate(-112.5deg);
       opacity: 0.7;
       text-indent: -999999px;
 
