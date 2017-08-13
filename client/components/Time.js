@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-export default class Clock extends Component {
+export default class Time extends Component {
 
   constructor(props) {
     super(props)
@@ -11,7 +11,7 @@ export default class Clock extends Component {
     }
   }
 
-  time() {
+  setTime() {
     setInterval(this.getTime.bind(this), 1000);
   }
 
@@ -28,7 +28,7 @@ export default class Clock extends Component {
   render() {
 
     {
-      this.state.loaded === false && this.time();
+      this.state.loaded === false && this.setTime();
     }
 
     return (
