@@ -14,89 +14,106 @@ body {
   width: 100vw;
 }
 
-.circle {
-  background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
+.circle-container {
   position: relative;
-  width: $circle-diameter;
-  height: $circle-diameter;
-  overflow: hidden;
-  @include borderRadius(50%);
 
-  .segments {
-    transform: rotate(-22.5deg);
+  .time {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: calc((80vh / 2) - 0.5em);
+    z-index: 2;
+    color: $white;
+    font-size: 3em;
+    line-height: 1em;
+  }
 
-    .segment {
+  .circle {
+    background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
+    position: relative;
+    width: $circle-diameter;
+    height: $circle-diameter;
+    overflow: hidden;
+    @include borderRadius(50%);
+
+    .segments {
+      transform: rotate(-112.5deg);
       position: absolute;
-      width: 0;
-      height: 0;
-      border-top: 0 solid transparent;
-      border-bottom: $segment-height solid transparent;
-      border-right: $segment-width solid pink;
-      transform-origin: top left;
-      
-      // using sass for loop to create 24 segment classes
-      @for $i from 0 through 7 {
-        &.s-#{$i} {
-          @include rotate($i);  
+      left: 50%;
+      top: 50%;
+      opacity: 0.7;
+      text-indent: -999999px;
+
+      .segment {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 0 solid transparent;
+        border-bottom: $segment-height solid transparent;
+        border-right: $segment-width solid pink;
+        transform-origin: top left;
+        
+        // using sass for loop to create 24 segment classes
+        @for $i from 0 through 7 {
+          &.s-#{$i} {
+            @include rotate($i);  
+          }
         }
       }
-    }
 
-    @for $i from 0 through 5 {
-      .celcius-#{$i} {
-        border-right-color: #2f358f;
+      @for $i from 0 through 5 {
+        .celcius-#{$i} {
+          border-right-color: #2f358f;
+        }
       }
-    }
 
-    @for $i from 6 through 10 {
-      .celcius-#{$i} {
-        border-right-color: #0a56a2;
+      @for $i from 6 through 10 {
+        .celcius-#{$i} {
+          border-right-color: #0a56a2;
+        }
       }
-    }
 
-    @for $i from 11 through 15 {
-      .celcius-#{$i} {
-        border-right-color: #1aa79d;
+      @for $i from 11 through 15 {
+        .celcius-#{$i} {
+          border-right-color: #1aa79d;
+        }
       }
-    }
 
-    @for $i from 16 through 20 {
-      .celcius-#{$i} {
-        border-right-color: #17a456;
+      @for $i from 16 through 20 {
+        .celcius-#{$i} {
+          border-right-color: #17a456;
+        }
       }
-    }
 
-    @for $i from 21 through 25 {
-      .celcius-#{$i} {
-        border-right-color: #fef036;
+      @for $i from 21 through 25 {
+        .celcius-#{$i} {
+          border-right-color: #fef036;
+        }
       }
-    }
 
-    @for $i from 26 through 30 {
-      .celcius-#{$i} {
-        border-right-color: #fec42e;
+      @for $i from 26 through 30 {
+        .celcius-#{$i} {
+          border-right-color: #fec42e;
+        }
       }
-    }
 
-    @for $i from 31 through 35 {
-      .celcius-#{$i} {
-        border-right-color: #fd9326;
+      @for $i from 31 through 35 {
+        .celcius-#{$i} {
+          border-right-color: #fd9326;
+        }
       }
-    }
 
-    @for $i from 36 through 40 {
-      .celcius-#{$i} {
-        border-right-color: #f16631;
+      @for $i from 36 through 40 {
+        .celcius-#{$i} {
+          border-right-color: #f16631;
+        }
       }
-    }
 
-    @for $i from 41 through 50 {
-      .celcius-#{$i} {
-        border-right-color: #eb212f;
+      @for $i from 41 through 50 {
+        .celcius-#{$i} {
+          border-right-color: #eb212f;
+        }
       }
     }
   }
