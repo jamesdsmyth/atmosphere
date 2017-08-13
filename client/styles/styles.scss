@@ -51,10 +51,10 @@ body {
         height: 0;
         border-top: 0 solid transparent;
         border-bottom: $segment-height solid transparent;
-        border-right: $segment-width solid pink;
+        border-right: $segment-width solid transparent;
         transform-origin: top left;
         
-        // using sass for loop to create 24 segment classes
+        // using sass for loop to create 8 segment classes
         @for $i from 0 through 7 {
           &.s-#{$i} {
             @include rotate($i);  
