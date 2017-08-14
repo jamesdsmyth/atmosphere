@@ -6,8 +6,8 @@ import Time from './Time';
 const Circle = ( { weatherArray } ) => (
   <div className="circle-container">
     {/* <Time /> */}
-    {/* <Segments array={weatherArray} /> */}
-    <Canvas />
+    <Segments weatherArray={weatherArray} />
+    <Canvas weatherArray={weatherArray} />
   </div>
 )
 
