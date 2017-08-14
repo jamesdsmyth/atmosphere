@@ -29,6 +29,15 @@ body {
     line-height: 1em;
   }
 
+  .canvas {
+    width: $circle-diameter;
+    height: $circle-diameter;
+    overflow: hidden;
+    @include borderRadius(50%);
+    position: relative;
+    background: $white;
+  }
+
   .circle {
     background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
     position: relative;
