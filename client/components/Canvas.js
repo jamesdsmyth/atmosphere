@@ -7,7 +7,7 @@ export default class Canvas extends Component {
 
     console.log(t);
 
-    switch(parseInt(t)) {
+    switch(t) {
       case (t < 5):
         color = '#2f358f';
         break;
@@ -46,7 +46,7 @@ export default class Canvas extends Component {
 
       default: 
         color = 'yellow';
-    } 
+    }
 
     console.log(color);
 
