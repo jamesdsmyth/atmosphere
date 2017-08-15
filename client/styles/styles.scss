@@ -30,12 +30,7 @@ body {
   }
 
   #canvas {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    // @include borderRadius(50%);
-    position: relative;
-    background: $white;
+    background: transparent;
   }
 
   .circle {
