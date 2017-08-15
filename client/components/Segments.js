@@ -1,8 +1,10 @@
 import React from 'react';
 import Segment from './Segment';
+import Time from './Time';
 
 const Segments = ( {weatherArray} ) => (
   <div className="circle">
+    <Time />
     <ul className="segments">
       {
         weatherArray.map((x, i) => {

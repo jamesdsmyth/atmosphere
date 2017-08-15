@@ -24,6 +24,7 @@ const apiCall = () => {
 
   call().then((response) => {
     Store.dispatch(populateWeather(response));
+    console.log(response);
   }, (error) => {
     alert(error);
   });

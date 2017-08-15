@@ -1,21 +1,17 @@
 @import './reset.scss';
 @import './_vars.scss';
 @import './_mixins.scss';
-
+c
 body {
   background: $grey;
 }
 
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.circle-container {
   height: 100vh;
   width: 100vw;
-}
-
-.circle-container {
   position: relative;
+  display: flex;
+  justify-content: center;
 
   .time {
     position: absolute;

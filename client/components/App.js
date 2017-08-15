@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import Circle from './Circle';
 import apiCall from '../api/Api';
 
-apiCall();
-
 class Initial extends Component {
+
   render() {
+    apiCall();
     
     let weatherArray = this.props.weather.list != null ? this.props.weather.list.splice(0,8) : [];
     

@@ -22,7 +22,6 @@ export default class Time extends Component {
       currentTime: currentTime,
       loaded: true
     });
-
   }
 
   render() {
