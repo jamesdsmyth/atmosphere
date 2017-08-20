@@ -3,9 +3,9 @@ import Segment from './Segment';
 import Time from './Time';
 
 const Segments = ( {weatherArray} ) => (
-  <div className="circle">
+  <div className="circle-container">
     <Time />
-    <ul className="segments">
+    <ul id="segments">
       {
         weatherArray.map((x, i) => {
           let newClass = `segment s-${i}`;

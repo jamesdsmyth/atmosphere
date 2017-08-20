@@ -1,7 +1,7 @@
 @import './reset.scss';
 @import './_vars.scss';
 @import './_mixins.scss';
-c
+
 body {
   background: $grey;
 }
@@ -11,7 +11,8 @@ body {
   width: 100vw;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 
   .time {
     position: absolute;
@@ -43,7 +44,7 @@ body {
     background: transparent;
   }
 
-  .circle {
+  .circle-container {
     background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
     position: relative;
     width: $circle-diameter;
@@ -51,7 +52,7 @@ body {
     overflow: hidden;
     @include borderRadius(50%);
 
-    .segments {
+    #segments {
       position: absolute;
       left: 50%;
       top: 50%;
