@@ -4,8 +4,6 @@ Using Canvas and a weather API, we can visually see what the temperature will be
 
 Just a bit of fun built using React.
 
-![Screen shot](./screenshots/screengrab-1.jpg)
-
 ### How to run
 
 1. `git clone` the repo
