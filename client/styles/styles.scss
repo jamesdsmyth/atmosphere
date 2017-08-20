@@ -25,6 +25,20 @@ body {
     line-height: 1em;
   }
 
+  .canvas-container {
+    position: relative;
+
+    .clock-line {
+      height: 300px;
+      width: 1px;
+      display: block;
+      position: absolute;
+      background: $white;
+      left: calc(50% - 1px);
+      z-index: 2;
+    }
+  }
+
   #canvas {
     background: transparent;
   }

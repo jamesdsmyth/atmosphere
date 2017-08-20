@@ -61,7 +61,7 @@ export default class Canvas extends Component {
 
     return (
       <div className="canvas-container">
-        <span className="line"></span>
+        <span className="clock-line"></span>
         <canvas id="canvas"></canvas>
       </div>
     )
