@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import colorSelection from '../misc/colors';
+import moment from 'moment';
 
 export default class Canvas extends Component {
 
   render() {
 
+    let then = 1502955757459;
+    console.log(new Date().getTime());
     let canvas = document.getElementById('canvas');
+
+    if(this.props.weatherArray[0] !== undefined) {
+      let b = moment(new Date().getTime()).diff(moment(this.props.weatherArray[0].dt_txt))
+      let c = moment(new Date().getTime()).format('HH:mm:ss')
+      let d = moment(this.props.weatherArray[0].dt_txt).format('HH:mm:ss')
+      let e = moment.duration(b);
+      let minutesPast = e.asSeconds() / 60;
+      // console.log(e.format('HH:mm:ss'));
+      console.log(minutesPast, b, c, d);   
+    }
 
     if(canvas) {
 

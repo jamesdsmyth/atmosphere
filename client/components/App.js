@@ -9,7 +9,7 @@ class Initial extends Component {
     apiCall();
     
     let weatherArray = this.props.weather.list != null ? this.props.weather.list.splice(0,8) : [];
-    
+    console.log(weatherArray);
     return (
       <Circle weatherArray={weatherArray} />
     )
