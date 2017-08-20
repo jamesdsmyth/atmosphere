@@ -9,7 +9,7 @@ import moment from 'moment';
 const rotateCanvas = (time) => {
   let segments = document.getElementById('segments'); // left hand side circle
   let canvas = document.getElementById('canvas'); // right hand side circle
-
+  
   let b = moment(new Date().getTime()).diff(moment(time))
   let e = moment.duration(b);
   let minutesPast = Math.floor(e.asSeconds() / 60);

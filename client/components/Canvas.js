@@ -38,9 +38,10 @@ export default class Canvas extends Component {
 
     let canvas = document.getElementById('canvas');
 
+    // if canvas has been rendered, this means we have the weather, so we can now call
+    // two functions that render the circles
     canvas && this.buildSegments();
-
-    this.props.weatherArray[0] !== undefined && rotateCanvas(this.props.weatherArray[0].dt_txt);
+    canvas && rotateCanvas(this.props.weatherArray[0].dt_txt);
 
     return (
       <div className="canvas-container">

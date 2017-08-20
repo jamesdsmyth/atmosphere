@@ -2,17 +2,19 @@
 @import './_vars.scss';
 @import './_mixins.scss';
 
-body {
-  background: $grey;
-}
-
 .circle-container {
+  font-family: arial;
   height: 100vh;
   width: 100vw;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  .loading-text {
+    font-size: 2em;
+    color: $grey;
+  }
 
   .time {
     position: absolute;
@@ -30,7 +32,7 @@ body {
     position: relative;
 
     .clock-line {
-      height: 300px;
+      height: 50px;
       width: 1px;
       display: block;
       position: absolute;
@@ -45,11 +47,11 @@ body {
   }
 
   .circle-container {
-    background: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-new-york.jpg?itok=neFmsUY1') no-repeat center center $white;
     position: relative;
     width: $circle-diameter;
     height: $circle-diameter;
     overflow: hidden;
+    
     @include borderRadius(50%);
 
     #segments {
@@ -57,8 +59,6 @@ body {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      transform: rotate(-112.5deg);
-      opacity: 0.7;
       text-indent: -999999px;
 
       .segment {
