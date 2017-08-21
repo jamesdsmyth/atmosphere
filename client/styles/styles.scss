@@ -28,18 +28,19 @@
     line-height: 1em;
   }
 
+  .clock-line {
+    height: 50px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    background: $white;
+    left: calc(50% - 1px);
+    top: 0;
+    z-index: 2;
+  }
+
   .canvas-container {
     position: relative;
-
-    .clock-line {
-      height: 50px;
-      width: 1px;
-      display: block;
-      position: absolute;
-      background: $white;
-      left: calc(50% - 1px);
-      z-index: 2;
-    }
   }
 
   #canvas {
@@ -51,7 +52,7 @@
     width: $circle-diameter;
     height: $circle-diameter;
     overflow: hidden;
-    
+
     @include borderRadius(50%);
 
     #segments {

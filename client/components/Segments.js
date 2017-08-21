@@ -4,6 +4,7 @@ import Time from './Time';
 
 const Segments = ( {weatherArray} ) => (
   <div className="circle-container">
+    <span className="clock-line"></span>
     <Time />
     <ul id="segments">
       {
