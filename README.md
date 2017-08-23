@@ -1,6 +1,6 @@
 # Atmosphere
 
-Using Canvas and a weather API, we can visually see what the temperature will be like where you live.
+With Atmosphere, you can visually see what the temperature will be like where you live in a 24hour circle.
 
 Just a bit of fun built using React, Redux, Canvas, Browser Geolocation service and the [Open Weather Map API](https://openweathermap.org/api)
 
