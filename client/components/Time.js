@@ -16,8 +16,7 @@ export default class Time extends Component {
   }
 
   getTime() {
-    let currentTime = moment(new Date()).format('H:mm');
-
+    let currentTime = moment(new Date()).format('HH:mm');
     this.setState({
       currentTime: currentTime,
       loaded: true
