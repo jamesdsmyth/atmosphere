@@ -2,7 +2,7 @@
 
 Using Canvas and a weather API, we can visually see what the temperature will be like where you live.
 
-Just a bit of fun built using React.
+Just a bit of fun built using React, Redux, Canvas, Browser geolocation service and the Open [https://openweathermap.org/api] (Weather Map API). 
 
 ### How to run
 
