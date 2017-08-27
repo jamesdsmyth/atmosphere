@@ -3,11 +3,11 @@ import Segments from './Segments';
 import Canvas from './Canvas';
 import Loading from './Loading';
 
-const CircleContainer = ( { weatherArray } ) => (
+const Container = ( { weatherArray } ) => (
   <div>
     {
       weatherArray.length > 0 ?
-      <div className="circle-container">
+      <div className="container">
         <Segments weatherArray={weatherArray} />
         <Canvas weatherArray={weatherArray} />
       </div>
@@ -19,4 +19,4 @@ const CircleContainer = ( { weatherArray } ) => (
   </div>
 )
 
-export default CircleContainer;
+export default Container;
