@@ -12,7 +12,7 @@ const Container = ( { weatherArray } ) => (
         <Canvas weatherArray={weatherArray} />
       </div>
     :
-      <div className="circle-container">
+      <div className="container">
         <Loading />
       </div>
     }
